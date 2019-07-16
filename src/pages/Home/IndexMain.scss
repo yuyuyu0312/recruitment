@@ -1,0 +1,41 @@
+.index-main{
+    width:100%;
+    height:478px;
+    position: relative;
+    img{
+        position: absolute;
+        width:100%;
+        height:100%;
+    }
+    .mask{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(31,56,88,0.40)
+    }
+    .form{
+        position: absolute;
+        height:290px;
+        width:490px;
+        left: 50%;
+        top: 50%;
+        margin-left: -245px;
+        margin-top: -145px;
+        .zn-word{
+            font-size: 34px;
+            color: #fff;
+            margin-bottom: 38px;
+            line-height: 48px;
+            font-family: PingFangSC-Thin!important;
+        }
+        .en-word{
+            font-size: 54px;
+            color: #fff;
+            line-height: 56px;
+            font-family: Rufina-Bold!important;
+        }
+    }
+   
+}

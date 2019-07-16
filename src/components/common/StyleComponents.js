@@ -5,3 +5,8 @@ export const Wrapper = styled.div`
     margin:auto;
     height:100%;
 `
+export const BigWrapper = styled.div`
+    width:1180px;
+    margin:auto;
+    height:100%;
+`
