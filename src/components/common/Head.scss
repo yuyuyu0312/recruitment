@@ -33,7 +33,6 @@
         }
         ul{
             display: flex;
-        
                 a{
                     font-size: 14px;
                     color: #fff;
@@ -42,11 +41,15 @@
                     line-height: 52px;
                     padding: 10px 15px;
                     margin-left: 4px;
+                    align-items: center;
                 }
                 a:hover{
                     color: #F37327;
                     opacity: 1;
                     text-decoration:none;
+                }
+                .active{
+                    color: #F37327;
                 }
             
         }
@@ -62,4 +65,5 @@
             font-family: PingFangSC-Regular;
         }
     }
+    
 }

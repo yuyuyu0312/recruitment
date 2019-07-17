@@ -10,7 +10,7 @@ module.exports = override(
             'assets': path.join(__dirname,'src/assets'),
             'components': path.join(__dirname,'src/components'),
             'common': path.join( __dirname, 'src/components/common' ),
-            'layout': path.join( __dirname,'src/components/layout'),
+            'mock': path.join( __dirname,'src/mock'),
             'pages': path.join( __dirname,'src/pages'),
             'store': path.join( __dirname,'src/store'),
             'utils': path.join( __dirname,'src/utils'),

@@ -15,7 +15,7 @@
         background: #fff;
         position: absolute;
         opacity: 0.1;
-        z-index:-1;
+        z-index:0;
     }
     input{
         width: 368px;
@@ -24,6 +24,7 @@
         border:0;
         border-radius: 3px;
         padding-left:15px;
+        z-index: 9
     }
     
     input::-webkit-input-placeholder{
@@ -41,5 +42,6 @@
         height: 40px;
         border:0;
         border-radius: 3px;
+        z-index: 9
     }
 }

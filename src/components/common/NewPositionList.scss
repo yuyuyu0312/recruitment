@@ -1,0 +1,67 @@
+.content-box{
+  width:100%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  .title{
+    height: 49px;
+    border-bottom: 1px solid rgba(31,56,88,0.06);
+    padding: 0 14px;
+    background: white;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content{
+    flex:1;
+    overflow: hidden;
+    position: relative;
+  }
+  ul{
+    position: absolute;
+    height:100%;
+    width:100%;
+    .swiper-container{
+      height:100%;
+    }
+    li{
+      overflow: hidden;
+      padding: 0 14px;
+      line-height: 50px;
+      .position{
+        float: left;
+        color: #3C99D8;
+        cursor: pointer;
+        font-size: 14px;
+        width: 400px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap
+      }
+      .date{
+        font-style: normal;
+        float: right;
+        width: 70px;
+        text-align: right;
+        font-size: 14px;
+        color: rgba(31,56,88,0.60);
+      }
+     
+      .city{
+        float: right;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0,0,0,0.60);
+        margin-right: 70px;
+        width: 202px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+     
+    }
+  }
+}
