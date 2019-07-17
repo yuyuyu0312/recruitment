@@ -27,19 +27,19 @@ class NewPositionList extends Component{
         this.move()
     }  
     move = () =>{
-        const { NewPosition } = this.props   
-        const _this = this
+        const { NewPosition } = this.props  
+        const { top } = this.state
         const boxHeight = parseInt(getComputedStyle(this.container).height)
+        let topPosition = top
         this.setState({
             timer : setInterval( ()=>{
-                _this.state.top += 2
-                if(_this.state.top >= NewPosition.positionList.length*50-boxHeight){
-                    _this.state.top = 0
+                if(topPosition >= NewPosition.positionList.length*50-boxHeight){
+                    topPosition = 0
                 }
                 this.setState({
-                    top: _this.state.top 
+                    top: topPosition += 1
                 })
-            },60)
+            },40)
         })   
     }
     stopMove = ()=>{
@@ -57,6 +57,7 @@ class NewPositionList extends Component{
         const { top } = this.state
         const style = {
             top: `-${top}px`,
+
         }
         return(
             <div className="content-box"> 
